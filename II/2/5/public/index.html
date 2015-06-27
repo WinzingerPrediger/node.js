@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var socket = io();
+
+      socket.on("error", function(err) {
+      	console.log("connect failed: "+err)
+      })
+
+      function emitNewUser() {
+      	socket.emit('newUser', $('#username').val(), function(data) {
+          $('#result').val(data.result);
+      	});
+      }
+    </script>
+  </head>
+  <body>
+    <p>user-name:</p>
+    <p>
+      <input id="username" autocomplete="off"/>
+      <input type="button" name="emit" value="emit event 'newUser'" onclick="emitNewUser()">
+      <input id="result" autocomplete="off" readonly/>
+    </p>
+  </body>
+</html>

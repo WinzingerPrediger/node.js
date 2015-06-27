@@ -1,0 +1,42 @@
+img(src='foo.jpg')
+//  some comment to be found in HTML later
+//- some text that only appears in Jade-code
+
+//
+  this
+  is
+  a
+  multiline
+  comment
+
+//-
+  that's
+  also
+  multiline
+
+
+//- traditional structuring
+strong
+  i.myclass
+    a(href='foo.html')
+      img(src='bar.jpg')
+
+//- condensed structuring
+strong: i.myclass: a(href='foo.html'): img(src='bar.jpg')
+
+strong: i.myclass
+  ul
+   li one
+   li two
+
+a(src='http://www.nodejs.org') node.js homepage
+
+script.
+  if (authorised)
+    console.log( "Benutzer ist authorisiert!");
+  else
+    console.log( "Benutzer ist NICHT authorisiert!");
+
+ul
+ li #{myVar}
+ li !{myVar}

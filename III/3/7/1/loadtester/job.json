@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "duration": 1000000,
+  "connections": 50,
+  "sequence": [
+    { "method": "GET",  "path": "/sample/request" }
+  ]
+}

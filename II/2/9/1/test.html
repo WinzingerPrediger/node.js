@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mocha Browser-Side Testing</title>
+        <link rel="stylesheet" href="browsertest-include/mocha.css" />
+    </head>
+    <body>
+        <h1>Fancy Input Form</h1>
+        <form>
+          <input id="email" type="text" name="email" required>
+          <button id="signup-button" onClick="validate()">Submit!</button>
+        </form>
+        <div id="mocha"></div>
+        <script>
+            var validate = function() {
+                if (!doValidate(document.getElementById('email').value)) {
+                    alert("sorry, your input is not valid");
+                }
+            }
+
+            var doValidate = function(str) {
+                if (!uppercaseOnly(str)) {
+                    return false;
+                }
+                if (!noDigits(str)) {
+                    return false;
+                }
+                return true;
+            }
+
+            var uppercaseOnly = function(str) {
+                return (str === str.toLowerCase());
+            }
+            var noDigits = function(str) {
+                return (str.match(/\d+/g) == null);
+            }
+        </script>
+        <script src="browsertest-include/mocha.js"></script>
+        <script src="browsertest/test.js"></script>
+    </body>
+</html>

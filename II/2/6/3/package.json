@@ -1,0 +1,12 @@
+{
+  "name": "04_rest_soap",
+  "version": "0.0.1",
+  "description": "code for chapter 4, 'Rest and Soap'",
+  "author": "Charly, Robert, Victor & Ralph",
+  "dependencies": {
+    "libxmljs": "0.6.x",
+    "node-expat": "2.0.x",
+    "xml-crypto": "0.0.x"
+  },
+  "engine": "node >= 0.8.8"
+}

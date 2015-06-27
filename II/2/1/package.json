@@ -1,0 +1,19 @@
+{
+  "name": "fileio",
+  "version": "0.0.1",
+  "description": "This is a test module for demonstrating how to use fileio",
+  "dependencies": {
+    "fs-extra": "0.12.x",
+    "file": "0.2.x",
+    "find": "0.1.x",
+    "properties": "1.2.x",
+    "token-filter": "0.2.x"
+  },
+  "repository": "",
+  "keywords": [
+    "node-book",
+    "fileio"
+  ],
+  "author": "Charly, Robert, Victor & Ralph",
+  "license": "BSD"
+}

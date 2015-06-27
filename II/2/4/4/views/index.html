@@ -1,0 +1,16 @@
+{% for agegroup in ageValues|groupBy('age') %}
+  <h2>{{ loop.key }}</h2>
+  <ul>
+    {% for person in agegroup %}
+    <li>{{ person.name }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<p>{{days | join(", ")}}</p>
+
+<p>The week starts on {{days | first}}.</p>
+
+<p>{{taggedString | striptags}}</p>
+
+<p>{{urlValue | url_encode}}</p>

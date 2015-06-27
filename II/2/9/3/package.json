@@ -1,0 +1,12 @@
+{
+  "name": "sinontest",
+  "version": "0.0.1",
+  "description": "This is a test module for demonstrating how to write modules",
+  "devDependencies" : {
+    "sinon" : "1.10.x",
+    "proxyquire" : "1.0.x",
+    "rewire" : "2.1.x"
+  },
+  "author": "Charly, Robert, Victor & Ralph",
+  "license": "BSD"
+}

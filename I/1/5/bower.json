@@ -1,0 +1,8 @@
+{
+  "name": "02_05_npm",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "2.3.x",
+    "d3": "3.4.x"
+  }
+}

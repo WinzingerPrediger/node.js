@@ -1,0 +1,11 @@
+{ "name": "logging",
+  "version": "0.0.1",
+  "description": "This is a test module for demonstrating how to log",
+  "dependencies" : {
+    "debug"   : "2.1.x",
+    "winston" : "0.8.x",
+    "bunyan"  : "1.2.x"
+  },
+  "author": "Robert & Ralph",
+  "license": "BSD"
+}

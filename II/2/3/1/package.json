@@ -1,0 +1,8 @@
+{
+  "name": "neo4j",
+  "version": "0.0.1",
+  "author": "Ralph",
+  "dependencies": {
+    "neo4j": ">= 1.1.x"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "socket.io.test",
+  "version": "0.0.1",
+  "author": "Ralph",
+  "dependencies": {
+    "express": ">= 4.x",
+    "socket.io": "1.2.0",
+    "static-favicon": "^2.0.0-alpha"
+  }
+}

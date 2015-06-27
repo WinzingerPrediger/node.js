@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nb:book xmlns:nb="http://nodebook.de/samples/">
+
+  <nb:chapters>
+    <nb:chapter num="1" authRef="1">Intro</nb:chapter>
+    <nb:chapter num="7" authRef="2">Appendix</nb:chapter>
+  </nb:chapters>
+
+  <nb:authors>
+    <nb:author id="1">
+      <nb:firstname>Charly</nb:firstname>
+      <nb:lastname>Kalleppally</nb:lastname>
+    </nb:author>
+    <nb:author id="2">
+      <nb:firstname>Robert</nb:firstname>
+      <nb:lastname>Prediger</nb:lastname>
+    </nb:author>
+  </nb:authors>
+  
+</nb:book>

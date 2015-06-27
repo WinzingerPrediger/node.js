@@ -1,0 +1,10 @@
+{
+  "name": "05_monitoring_loadtester",
+  "version": "0.0.1",
+  "description": "code for chapter 5, 'Monitoring'",
+  "author": "Charly, Robert, Victor & Ralph",
+  "dependencies": {
+    "load-tester": "0.5.x"
+  },
+  "engine": "node >= 0.10.8"
+}

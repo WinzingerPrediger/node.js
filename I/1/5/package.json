@@ -1,0 +1,10 @@
+{
+  "name": "02_05_npm",
+  "version": "0.0.1",
+  "description": "package.json example",
+  "author": "Robert & Ralph",
+  "dependencies": {
+    "restify": "git://github.com/rwinzinger/node-restify.git#bookpatch"
+  },
+  "engine": "node >= 0.10.23"
+}

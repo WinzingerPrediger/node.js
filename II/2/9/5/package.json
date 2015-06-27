@@ -1,0 +1,22 @@
+{
+  "name": "jasmine-travisci",
+  "version": "0.0.1",
+  "description": "This is a test module for demonstrating how to use travis-ci",
+  "dependencies": {
+    "restify": "1.4.x"
+  },
+  "devDependencies" : {
+    "jasmine-node" : "1.14.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jasmine-node . --color"
+  },
+  "repository": "",
+  "keywords": [
+    "node-book",
+    "ci"
+  ],
+  "author": "Robert & Ralph",
+  "license": "BSD"
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Arial';
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, Sans-Serif;
+  background-color: #202020;
+  color:rgba(0,150,0,1.0);
+}
+
+ul {
+  list-style-type: none;
+}
+
+#entry1 {
+  color:rgba(0,150,0,1.0);
+}
+#entry2 {
+  color:rgba(0,150,0,0.8);
+}
+#entry3 {
+  color:rgba(0,150,0,0.6);
+}
+#entry4 {
+  color:rgba(0,150,0,0.4);
+}
+#entry5 {
+  color:rgba(0,150,0,0.2);
+}

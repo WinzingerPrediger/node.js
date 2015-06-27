@@ -1,0 +1,8 @@
+{
+  "name": "intro",
+  "version": "0.0.1",
+  "author": "Robert & Ralph",
+  "dependencies": {
+  	"timestamp": "0.0.1"
+  }
+}

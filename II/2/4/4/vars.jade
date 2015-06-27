@@ -1,0 +1,61 @@
+doctype html
+
+ul
+ li #{myVar}
+ li !{myVar}
+
+input(type='checkbox', checked)
+input(type='checkbox', checked=true)
+input(type='checkbox', checked=false)
+
+img.firstClass.secondClass(src='foo.png')
+img.firstClass(src='foo.png')#abc.secondClass
+.thirdClassForDiv
+
+- console.log("this code will be executed")
+= "the answer is "+(7*6)
+
+ul
+ - for (i=0; i<5; i++)
+  li entry #{i}
+p= "the answer is "+(7*6)
+
+- var j = 5;
+- var productionMode = false;
+
+if j==5
+  p j is five
+else
+  p j is something else
+
+unless productionMode
+  p= "we're using node version "+process.version
+
+- var month = 7;
+
+case month
+ when 1
+ when 2
+ when 3
+   p It's Q1
+ when 4
+ when 5
+ when 6
+   p It's Q2
+ when 7
+ when 8
+ when 9
+   p It's Q3
+ default
+   p It's Q4
+
+- var users = ["Tom", "Peter", "Charly"];
+- var currentUser = {'name':'Charly', 'id':18773, 'active':true}
+
+ul
+  each user, index in users
+    li= user
+
+ul
+  each attName, attVal in currentUser
+    li= attName+" is "+attVal

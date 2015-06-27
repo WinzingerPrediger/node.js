@@ -1,0 +1,13 @@
+{
+  "name": "04_rest_soap",
+  "version": "0.0.1",
+  "description": "code for chapter 4, 'Rest and Soap'",
+  "author": "Charly, Robert, Victor & Ralph",
+  "dependencies": {
+    "restify": "1.4.x",
+    "http-auth": "1.2.x",
+    "oauth": "0.9.x",
+    "oauth2-provider": "1.x"
+  },
+  "engine": "node >= 0.8.8"
+}

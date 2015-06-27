@@ -1,0 +1,17 @@
+- var home  = {'url': 'http://www.acme.com/',      'name':'Home',          'active': false}
+- var docs  = {'url': 'http://www.acme.com/docs',  'name':'Documentation', 'active': true}
+- var about = {'url': 'http://www.acme.com/about', 'name':'About Us',      'active': false}
+
+- var entries = [home, docs, about]
+
+mixin navEntry(ne)
+  if ne.active
+    -var navClass='activeLink'
+  else
+    -var navClass='inactiveLink'
+
+  li: a(class=navClass href='#{ne.url}') #{ne.name}
+
+ul
+  each entry in entries
+    +navEntry(entry)

@@ -1,0 +1,29 @@
+.TH adhocsrv
+
+.SH NAME
+adhocsrv \- start a simple HTTP server with the current folder as docroot
+
+.SH SYNOPSIS
+.B adhocsrv
+[\fB\-d]
+[\fB\-\-DEL]
+[\fB\-\-PUT]
+[\fB\-\-POST]
+
+.SH DESCRIPTION
+.B adhocsrv
+serves files from the current folder (and subfolders). Optionally, creates (PUT), updates (POST) and deletes (DEL) files.
+
+.SH OPTIONS
+.TP
+.BR \-d
+"deep"-mode. Recurses into subfolders if necessary.
+.TP
+.BR \-\-DEL
+Enables deleting files. Use with caution, existing files might get lost!
+.TP
+.BR \-\-PUT
+Enables creating files.
+.TP
+.BR \-\-POST
+Enables updating files. Use with caution, existing files might get modified!

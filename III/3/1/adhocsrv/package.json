@@ -1,0 +1,28 @@
+{
+  "name": "adhocsrv",
+  "version": "0.0.1",
+  "description": "This is a test module for demonstrating how to write modules",
+  "main": "include.js",
+  "dependencies" : {
+    "bunyan" : "0.22.x"
+  },
+  "devDependencies" : {
+    "mocha" : "1.18.x",
+    "chai" : "1.9.x"
+  },
+  "scripts": {
+    "test": "mocha --recursive test"
+  },
+  "man" : [ "./doc/man/adhocsrv.1"],
+  "bin" : {
+    "adhocsrv"  : "./lib/start.js",
+    "srv" : "./lib/start.js"
+  },
+  "repository": "",
+  "keywords": [
+    "node-book",
+    "modules"
+  ],
+  "author": "Charly, Robert, Victor & Ralph",
+  "license": "BSD"
+}
