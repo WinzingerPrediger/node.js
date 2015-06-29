@@ -1,0 +1,7 @@
+Fehler gefunden? Bitte eintragen und einen Pull-Request stellen.
+
+Danke und viel Spaß noch!
+
+(ein kleines Beispiel)
+Seite 08/15, dritter Abschnitt
+Es muss heißen "Verbindungen von Fremdsystemen", nicht "Verbindungen zu Fremdsystemen"
