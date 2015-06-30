@@ -1,0 +1,32 @@
+{% set now = new Date() %}
+{{ now|date( "d.m.Y" ) }}
+
+{{ name|default( "n/a" ) }}
+
+{{ "<p>Hello, World!</p>"|escape }}
+
+{% set fantasyAgeValues = [
+  { age: 32, name: "Robert" },
+  { age: 41, name: "Charly" },
+  { age: 32, name: "Victor" },
+  { age: 35, name: "Ralph" }
+ ] %}
+{% for agegroup in people|groupBy("alter") %}
+    <h2>{{ loop.key }}</h2>
+    <ul>
+        {% for person in agegroup %}
+        <li>{{ person.name }}</li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+
+{% set days = ["Monday", "Tuesday", "Wednesday"] %}
+{{ days | join(", ")}}
+
+{% set taggedString = "<p>foo</p><bar>baz</bar><aaa><bb/>Hello" %}
+
+{% set arr = [ 1, 3, 5, 4, 3, 4, 2, 3, 5 ] %}
+{{ arr | uniq }}
+
+{% set arr = [ 1, 3, 5, 4, 3, 4, 2, 3, 5 ] %}
+{{ arr | uniq | sort | join( " - " ) }}
