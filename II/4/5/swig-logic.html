@@ -1,0 +1,28 @@
+{% if countWords() > 1 %}
+    {{ countWords }} Worte
+{% elseif countWords() == 1 %}
+    1 word
+{% else %}
+    no word
+{% endif %}
+
+// arr = [ 1, 2, 3, 4 ]
+{% for elem in arr %}
+    {{ elem }}
+{% endfor %}
+
+// arr = [ 1, 2, 3, 4 ]
+{% for elem in arr|reverse %}
+    {{ elem }}
+{% endfor %}
+
+// arr = [ 1, 2, 3, 4 ]
+{% for elem in arr %}
+    {% if loop.first %}
+        [
+    {% endif %}
+    {{ elem }}{% if !loop.last %} , {% endif %}
+    {% if loop.last %}
+        ]
+    {% endif %}
+{% endfor %}

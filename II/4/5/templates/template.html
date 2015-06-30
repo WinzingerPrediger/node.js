@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block title %}Hi there!{% endblock %}
+
+{% block head %}
+    {% parent %}
+    <link rel="stylesheet" href="styles.css" />
+{% endblock %}
+{% block content %}
+    <p>content of the new page</p>
+{% endblock %}
